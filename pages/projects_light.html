@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Projects – 3D & Creative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #f8fafc, #dbeafe);
+      color: #1e293b; /* dark slate-700 */
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.5s, color 0.5s;
+    }
+    .creative-card {
+      background: linear-gradient(145deg, #ffffff, #e2e8f0);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+      transform-style: preserve-3d;
+    }
+    .creative-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 15px 40px rgba(67, 97, 238, 0.15);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #4361EE, #7209B7, #F72585);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="w-full py-6 px-8 flex justify-between items-center fixed top-0 left-0 bg-white shadow-md z-30">
+    <a href="../index.html" class="text-2xl font-extrabold gradient-text">Yash Meena</a>
+    <div class="flex gap-6 md:gap-10 text-gray-700 font-medium items-center">
+      <a href="../index.html" class="hover:text-indigo-600 transition">Home</a>
+      <a href="#" class="hover:text-indigo-600 transition underline decoration-indigo-400 decoration-2">Projects</a>
+      <a href="skills.html" class="hover:text-indigo-600 transition">Skills</a>
+      <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      <!-- Theme toggle button -->
+      <button id="theme-toggle" class="ml-4 px-3 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700 flex items-center transition" title="Toggle Theme">
+        <svg id="theme-icon-sun" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M17.36 17.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M17.36 6.64l1.42-1.42"></path>
+        </svg>
+        <svg id="theme-icon-moon" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+        </svg>
+        <a href="./projects.html" class="ml-2 text-sm hidden md:inline">Theme</a>
+      </button>
+    </div>
+  </nav>
+
+  <main class="pt-28 max-w-7xl mx-auto px-6 sm:px-12">
+
+    <!-- 3D Projects Section -->
+    <section class="mb-20">
+      <h2 class="text-4xl font-bold mb-10 text-center gradient-text">3D Projects Showcase</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Project cards -->
+        <div class="creative-card p-6 cursor-pointer group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img src="../Resources/FOV.png" alt="3D Project 1" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold mb-1">Collage Reception Redesign</h3>
+          <p class="text-gray-600 text-sm">This is a concept interior re-design of my collag's reception area. It is a showcase of my skills in architecture and industry level modeling.</p>
+        </div>
+        <div class="creative-card p-6 cursor-pointer group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img src="../Resources/upscalemedia-transformed.png" alt="3D Project 2" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold mb-1">Photorealistic House Interior</h3>
+          <p class="text-gray-600 text-sm">This is a architectural interior rendering showcasing my skills in photorealistic rendering. The render shows the detailed rendering of this simple interior. This is a industry ready render fit for architectural works. </p>
+        </div>
+        <div class="creative-card p-6 cursor-pointer group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img src="../Resources/opened.png" alt="3D Project 3" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold mb-1">Solar Pannel Cleaning Bot</h3>
+          <p class="text-gray-600 text-sm">This is a prototype model of a solar pannel cleaning robot. The model is a one to one scaled 3D model of what was later build into the phsical form. The 3D model served as a profound blueprint and could later be used for 3D printing as it is a industry ready model set for not only prototyping but also production </p>
+        </div>
+        <div class="creative-card p-6 cursor-pointer group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img src="../Resources/Open house.png" alt="3D Project 4" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold mb-1">Environment to architectural scene Rendering</h3>
+          <p class="text-gray-600 text-sm">This is a rendering sample showcasing my skills in rendering, environmental lighting and sharp eye for detailed renders.</p>
+        </div>
+        <div class="creative-card p-6 cursor-pointer group">
+          <div class="overflow-hidden rounded-lg mb-4">
+            <img src="../Resources/stair clibing car front left.png" alt="3D Project 5" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+          </div>
+          <h3 class="text-xl font-semibold mb-1">Stair climbing dilivery bot</h3>
+          <p class="text-gray-600 text-sm">This is a concept model of a staircase climbing robot. The model serves not only as a blueprint but a profound visual representation of what the acutal thing can look like.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Clients Section -->
+    <section class="mb-20">
+        <h2 class="text-4xl font-bold mb-10 text-center gradient-text">Past Clients</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Client 1 -->
+        <div class="creative-card p-6 cursor-pointer group">
+            <div class="overflow-hidden rounded-lg mb-4">
+              <img src="../Resources/ash2.png" alt="3D Project 2" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Photorealistic House Render</h3>
+            <p class="text-gray-600 text-sm">As per client requirments, the render was done within several parameters including lighting the house, the environment placement and texturing. </p>
+        </div>
+
+        <!-- Client 2 -->
+        <div class="creative-card p-6 cursor-pointer group">
+            <div class="overflow-hidden rounded-lg mb-4">
+              <img src="../Resources/change2.png" alt="3D Project 2" class="w-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-lg" />
+            </div>
+            <h3 class="text-xl font-semibold mb-1">Photorealistic House Interior</h3>
+            <p class="text-gray-600 text-sm">This is a rener of a furniture to be placed in a park. The Client placed demands to texture, change lights, and render the furniture from several perspectives. </p>
+        </div>
+        </div>
+    </section>
+  
+  </main>
+
+<script>
+  // Theme switcher: toggles .dark on <html>
+  const btn = document.getElementById('theme-toggle')
+  const iconSun = document.getElementById('theme-icon-sun')
+  const iconMoon = document.getElementById('theme-icon-moon')
+  function updateIcons(isDark) {
+    if (isDark) {
+      iconMoon.style.display = 'inline';
+      iconSun.style.display = 'none';
+    } else {
+      iconMoon.style.display = 'none';
+      iconSun.style.display = 'inline';
+    }
+  }
+  function setTheme(isDark) {
+    document.documentElement.classList.toggle('dark', isDark);
+    updateIcons(isDark);
+  }
+  // Save preference in localStorage and apply on page load
+  let isDark = localStorage.getItem('theme') !== 'light';
+  setTheme(isDark);
+  btn.addEventListener('click', () => {
+    isDark = !document.documentElement.classList.contains('dark');
+    setTheme(isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
+</body>
+</html>

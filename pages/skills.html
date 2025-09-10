@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Skills – Technical & Creative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #1e293b, #0f172a);
+      color: #cbd5e1;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+    }
+    .creative-card {
+      background: rgba(19, 27, 46, 0.8);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+      transform-style: preserve-3d;
+    }
+    .creative-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(67, 97, 238, 0.6);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #4361EE, #7209B7, #F72585);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2.section-title {
+      margin-bottom: 2rem;
+      font-weight: 900;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    .skills-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .skills-list li {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+    }
+    /* Overlay text background for readability */
+    .section-overlay {
+      position: relative;
+      z-index: 10;
+      background: rgba(19, 27, 46, 0.85);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="w-full py-6 px-8 flex justify-between items-center fixed top-0 left-0 bg-[#131B2E] bg-opacity-90 shadow-lg z-30">
+    <a href="../index.html" class="text-2xl font-extrabold gradient-text">Yash Meena</a>
+    <div class="flex gap-8 text-gray-400 font-medium">
+      <a href="../index.html" class="hover:text-indigo-400 transition">Home</a>
+      <a href="projects.html" class="hover:text-indigo-400 transition">Projects</a>
+      <a href="#" class="hover:text-indigo-400 transition underline decoration-indigo-400 decoration-2">Skills</a>
+      <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
+    
+      <a href="./skills_light.html" id="theme-toggle" title="Toggle Theme"
+      class="ml-4 px-3 py-2 rounded bg-indigo-600 text-white hover:bg-indigo-700 flex items-center transition">
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="5" stroke="currentColor"></circle>
+        <path stroke="currentColor" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M17.36 17.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M17.36 6.64l1.42-1.42"></path>
+      </svg>
+      <span class="text-white font-medium">Toggle Theme</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-28 px-6 max-w-7xl mx-auto space-y-20">
+
+    <!-- Programming Languages & Frameworks -->
+    <section class="creative-card relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Code on screen" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+      <div class="section-overlay relative">
+        <h2 class="section-title gradient-text">Programming Languages & Frameworks</h2>
+        <ul class="skills-list max-w-xl mx-auto text-indigo-300 flex flex-wrap justify-center gap-6">
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Tailwind CSS</li>
+          <li>Django</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Technical & Analytical Skills -->
+    <section class="creative-card relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Tech equipment" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+      <div class="section-overlay relative">
+        <h2 class="section-title gradient-text">Technical & Analytical Skills</h2>
+        <ul class="skills-list max-w-xl mx-auto text-pink-400 flex flex-wrap justify-center gap-6">
+          <li>Automation and Scripting</li>
+          <li>Data Analysis</li>
+          <li>Robotics</li>
+          <li>Game Logic and Mechanics</li>
+          <li>Systems Design</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Soft & Design Skills -->
+    <section class="creative-card relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Creative design" class="absolute inset-0 h-full w-full object-cover opacity-30" />
+      <div class="section-overlay relative">
+        <h2 class="section-title gradient-text">Soft & Design Skills</h2>
+        <ul class="skills-list max-w-xl mx-auto text-purple-400 flex flex-wrap justify-center gap-6">
+          <li>Critical Thinking</li>
+          <li>Design Thinking</li>
+          <li>Creative Thinking</li>
+          <li>Sustainable Designing</li>
+          <li>Sustainable System Designing</li>
+          <li>Marketing</li>
+          <li>Human Psychology</li>
+          <li>User Experience</li>
+          <li>User Interface</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – 3D Artist & Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(90deg, #4361EE, #7209B7, #F72585);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .creative-card {
+      background: linear-gradient(145deg, #EFF4FB, #D6E0F0);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      transform-style: preserve-3d;
+    }
+    .pixel-border {
+      border: 2px solid #4361EE;
+      box-shadow: 0 0 10px rgba(67, 97, 238, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-white via-slate-100 to-indigo-100 min-h-screen text-gray-900 transition-colors duration-500">
+
+<!-- Navbar -->
+<nav class="w-full bg-white bg-opacity-90 py-6 px-6 md:px-12 flex items-center justify-between fixed top-0 left-0 z-40 shadow-md">
+  <a href="#hero" class="text-2xl md:text-3xl font-black gradient-text tracking-tight">Yash Meena</a>
+  <div class="flex items-center gap-8">
+    <a href="#about" class="hover:text-indigo-600 transition-colors font-medium">About</a>
+    <a href="#contact" class="hover:text-indigo-600 transition-colors font-medium">Contact</a>
+    <a href="projects.html" class="hover:text-indigo-600 transition-colors font-medium">Projects</a>
+    <a href="skills.html" class="hover:text-pink-600 transition-colors font-medium">Skills</a>
+ 
+    <!-- Dark Mod toggle switch-->
+        <button
+        class="ml-4 px-3 py-2 rounded bg-slate-700/80 text-white hover:bg-slate-600 flex items-center transition"
+        title="Toggle Theme"
+        >
+        <!-- Sun Icon for light mode -->
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" stroke="currentColor"></circle>
+            <path stroke="currentColor" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M17.36 17.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M17.36 6.64l1.42-1.42"></path>
+        </svg>
+        <a href="../index.html" class="text-white font-medium">Toggle Theme</a>
+    </button>
+  
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="hero" class="flex flex-col items-center justify-center h-screen text-center relative bg-gradient-to-t from-indigo-200 via-white to-white transition-colors duration-500 pt-32">
+  <div class="relative z-10">
+    <h1 class="text-5xl md:text-7xl font-black bg-gradient-to-r from-indigo-400 via-pink-400 to-blue-500 bg-clip-text text-transparent mb-2">Yash Meena</h1>
+    <p class="mt-5 md:text-2xl font-semibold tracking-wide text-indigo-800">Crafting Code | Creating Worlds</p>
+    <p class="mt-1 md:text-lg text-indigo-600">Blending <span class="font-bold">3D Imagination</span> & <span class="font-bold">Problem Solving</span> in Every Project</p>
+    <div class="flex gap-4 justify-center mt-8">
+      <a href="#about" class="px-5 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition font-semibold">About Me</a>
+      <a href="#contact" class="px-5 py-2 bg-pink-600 text-white rounded shadow hover:bg-pink-700 transition font-semibold">Contact</a>
+    </div>
+  </div>
+</header>
+
+<!-- About Me Section -->
+<section id="about" class="py-20 px-4 bg-white transition-colors duration-500">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+        <div class="relative">
+          <div class="w-64 h-64 bg-indigo-200 rounded-full opacity-40 absolute -top-4 -left-4"></div>
+          <div class="w-64 h-64 bg-pink-200 rounded-full opacity-40 absolute -bottom-4 -right-4"></div>
+          <img src="../Resources/Profile_pic.jpg" alt="Profile" class="relative z-10 w-64 h-64 object-cover rounded-full shadow-lg pixel-border">
+        </div>
+      </div>
+      <div class="md:w-2/3 md:pl-16">
+        <h2 class="text-4xl font-bold mb-6 text-indigo-700">About <span class="gradient-text">Me</span></h2>
+        <p class="text-xl text-gray-700 mb-6">
+          I'm a 3D artist and creative developer passionate about blending art and technology to create immersive experiences.
+        </p>
+        <p class="text-gray-600 mb-8">
+           I specialize in creating stunning 3D visuals, interactive installations, and pushing the boundaries of digital art. My work is driven by curiosity, attention to detail, and a constant desire to learn and innovate.
+        </p>
+        <div class="grid grid-cols-2 gap-6 mb-8">
+          <!-- Details icons/text omitted here for brevity, can keep similarly styled -->
+        </div>
+        <!-- <button class="px-6 py-3 bg-indigo-600 text-white rounded-lg transition-transform duration-200 hover:scale-105">
+          Download Resume
+        </button> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-32 px-6 flex items-center justify-center min-h-[90vh] bg-gradient-to-tl from-indigo-200 via-white to-white transition-colors duration-500">
+  <div class="w-full max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center rounded-2xl creative-card p-10 shadow-lg backdrop-blur-sm">
+    <!-- Info/Social Column -->
+    <div class="space-y-10 flex flex-col justify-center text-gray-800">
+      <div class="text-left">
+        <h2 class="text-4xl font-bold mb-4 gradient-text">Get in Touch</h2>
+        <p class="text-lg text-gray-600">
+          Interested in collaboration, a project, or just to say hello? Let’s connect! I'm available via email, phone or social media.
+        </p>
+      </div>
+      <ul class="space-y-4 text-base">
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 12A4 4 0 0 1 8 12M12 16v1m0-10v1m-6 5h1m10 0h1m-9.07 4.07l.71.71m8.486-8.486l.71.71m0 8.486l-.71.71m-8.485-8.486l-.71.71"></path></svg>
+          <span>Email: <a href="mailto:jlu09406@student.jlu.edu.in" class="text-indigo-600 hover:underline">jlu09406@student.jlu.edu.in</a></span>
+        </li>
+        <li class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"></path></svg>
+          <span>Phone: <a href="tel:+91 6268796572" class="text-indigo-600 hover:underline">+91 6268796572</a></span>
+        </li>
+        <li class="flex items-center gap-5 mt-6">
+          <a href="https://twitter.com/" class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center hover:bg-indigo-200 transition" target="_blank" rel="noopener">
+            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557..."/></svg>
+          </a>
+          <a href="https://github.com/" class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center hover:bg-pink-200 transition" target="_blank" rel="noopener">
+            <svg class="w-5 h-5 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5..."/></svg>
+          </a>
+          <a href="https://linkedin.com/" class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center hover:bg-purple-200 transition" target="_blank" rel="noopener">
+            <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 24 24"><path d="M16.354 16.354h-2.533..."/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="space-y-8 w-full max-w-md bg-white rounded-xl p-8 shadow-lg mx-auto">
+      <div>
+        <label for="name" class="block mb-2 font-medium text-gray-800">Your Name</label>
+        <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required />
+      </div>
+      <div>
+        <label for="email" class="block mb-2 font-medium text-gray-800">Email Address</label>
+        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required />
+      </div>
+      <div>
+        <label for="phone" class="block mb-2 font-medium text-gray-800">Phone Number</label>
+        <input type="text" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required />
+      </div>
+      <div>
+        <label for="message" class="block mb-2 font-medium text-gray-800">Your Message</label>
+        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required></textarea>
+      </div>
+      <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition">Send Message</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
